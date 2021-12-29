@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdnRenting.Domain.Entities
 {
-    public class Order : Base
+    public class Order : EntityBase
     {
         public Guid OrderNumber { get; set; }
         public DateTime OrderDate { get; set; }

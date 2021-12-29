@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdnRenting.Domain.Entities
 {
-    public class Bill : Base
+    public class Bill : EntityBase
     {
         public virtual Order Order { get; set; }
         public DateTime ProcessStartDate { get; set; }

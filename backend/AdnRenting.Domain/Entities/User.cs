@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AdnRenting.Domain.Entities
 {
-    public class User : Base
+    public class User : EntityBase
     {
         public string Country { get; set; }
         public string Name { get; set; }

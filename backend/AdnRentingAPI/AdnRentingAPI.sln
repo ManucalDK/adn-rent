@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Api", "AdnRenting.Api.csproj", "{90423595-5151-4341-9044-7406ECAB6CE5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Application", "..\AdnRenting.Application\AdnRenting.Application.csproj", "{2E87F9D8-818E-41A2-8ED5-B0D5079ADB79}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Infraestructure", "..\AdnRenting.Infraestructure\AdnRenting.Infraestructure.csproj", "{3348A011-BEFE-48FE-82A7-93D6CDBC8571}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Domain", "..\AdnRenting.Domain\AdnRenting.Domain.csproj", "{277BC587-DAF5-4C4B-8160-4A639E273050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdnRenting.Api", "AdnRenting.Api.csproj", "{90423595-5151-4341-9044-7406ECAB6CE5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5921CD59-12A0-4B2C-9E97-5D663D93CBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Application", "..\AdnRenting.Application\AdnRenting.Application.csproj", "{ABB45D5C-8875-4740-AA19-D604E6E74418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Domain", "..\AdnRenting.Domain\AdnRenting.Domain.csproj", "{1DE1C687-4B86-490E-BA0A-FE832A927EFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdnRenting.Infrastructure", "..\AdnRenting.Infrastructure\AdnRenting.Infrastructure.csproj", "{8889562B-0631-43EE-8423-9453BA9CBD22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,18 +23,18 @@ Global
 		{90423595-5151-4341-9044-7406ECAB6CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90423595-5151-4341-9044-7406ECAB6CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90423595-5151-4341-9044-7406ECAB6CE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E87F9D8-818E-41A2-8ED5-B0D5079ADB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E87F9D8-818E-41A2-8ED5-B0D5079ADB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E87F9D8-818E-41A2-8ED5-B0D5079ADB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E87F9D8-818E-41A2-8ED5-B0D5079ADB79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3348A011-BEFE-48FE-82A7-93D6CDBC8571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3348A011-BEFE-48FE-82A7-93D6CDBC8571}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3348A011-BEFE-48FE-82A7-93D6CDBC8571}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3348A011-BEFE-48FE-82A7-93D6CDBC8571}.Release|Any CPU.Build.0 = Release|Any CPU
-		{277BC587-DAF5-4C4B-8160-4A639E273050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{277BC587-DAF5-4C4B-8160-4A639E273050}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{277BC587-DAF5-4C4B-8160-4A639E273050}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{277BC587-DAF5-4C4B-8160-4A639E273050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB45D5C-8875-4740-AA19-D604E6E74418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB45D5C-8875-4740-AA19-D604E6E74418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB45D5C-8875-4740-AA19-D604E6E74418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB45D5C-8875-4740-AA19-D604E6E74418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE1C687-4B86-490E-BA0A-FE832A927EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE1C687-4B86-490E-BA0A-FE832A927EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE1C687-4B86-490E-BA0A-FE832A927EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE1C687-4B86-490E-BA0A-FE832A927EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8889562B-0631-43EE-8423-9453BA9CBD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8889562B-0631-43EE-8423-9453BA9CBD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8889562B-0631-43EE-8423-9453BA9CBD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8889562B-0631-43EE-8423-9453BA9CBD22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
