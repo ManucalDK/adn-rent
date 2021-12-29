@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AdnRenting.Domain.Entities
 {
-    class OrderDetail
+    public class OrderDetail : Base
     {
+        public int ItemId { get; set; }
+        public int Quantity { get; set; }
+        public double UnitPrice { get; set; }
+        public virtual Order Order { get; set; }
     }
 }
