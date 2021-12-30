@@ -16,7 +16,7 @@ namespace AdnRenting.Application.DataBase
         {
             _dbContext = dbContext;
         }
-        public virtual async Task<T> GetById(int id)
+        public virtual async Task<T> GetById(string id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }

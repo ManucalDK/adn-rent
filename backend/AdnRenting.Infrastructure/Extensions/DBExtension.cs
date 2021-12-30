@@ -9,7 +9,6 @@ namespace AdnRenting.Application.Extension
         public static IServiceCollection AddDBExtension(this IServiceCollection services)
         {
             services.AddDbContext<AdnDBContext>(opt => opt.UseInMemoryDatabase("AdnMemoryDB"));
-
             return services;
         }
     }

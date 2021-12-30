@@ -1,4 +1,5 @@
-﻿using AdnRenting.Domain.Entities;
+﻿using AdnRenting.Application.Dto;
+using AdnRenting.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,8 @@ namespace AdnRenting.Application.Interfaces
 {
     public interface IUserService
     {
-        Task<IEnumerable<User>> GetUserList();
+        Task<IEnumerable<UserInfoDto>> GetUserList();
+
+        Task<User> PostUser(string name);
     }
 }

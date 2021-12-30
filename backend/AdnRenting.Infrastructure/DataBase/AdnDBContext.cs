@@ -1,4 +1,5 @@
 ﻿using AdnRenting.Domain.Entities;
+using AdnRenting.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,14 +22,9 @@ namespace AdnRenting.Infrastructure.DataBase
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            List<User> users = new List<User> {
-                new User(){Country="Colombia", DateOfBirth=DateTime.Now.AddYears(-31), Email="test1@fmail.com", LastName="Ape", Name="Nom", Password="test1"},
-                new User(){Country="Colombia", DateOfBirth=DateTime.Now.AddYears(-20), Email="test2@fmail.com", LastName="BotLn1", Name="BotNn1", Password="test1"},
-                new User(){Country="Colombia", DateOfBirth=DateTime.Now.AddYears(-50), Email="test3@fmail.com", LastName="BotLn2", Name="BotNn2", Password="test1"},
-            };
-
-            modelBuilder.Entity<User>().HasData(users.ToArray());
+            
+            modelBuilder.SeedData();
+            modelBuilder.Entity<Order>().HasOne(order => order.Bill).WithOne(bill => bill.Order).HasForeignKey<Bill>(bill => bill.OrderId);
         }
     }
 }

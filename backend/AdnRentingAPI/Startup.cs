@@ -1,4 +1,6 @@
+using AdnRenting.Application.Dto;
 using AdnRenting.Application.Extension;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,7 +36,11 @@ namespace AdnRentingAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AdnRentingAPI", Version = "v1" });
             });
 
-            services.AddDBExtension();
+            services
+            .AddDBExtension()
+            .AddMapperExtension()
+            .AddDependencies();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

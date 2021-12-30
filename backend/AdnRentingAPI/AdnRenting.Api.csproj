@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AdnRenting.Application\AdnRenting.Application.csproj" />
     <ProjectReference Include="..\AdnRenting.Domain\AdnRenting.Domain.csproj" />
     <ProjectReference Include="..\AdnRenting.Infrastructure\AdnRenting.Infrastructure.csproj" />

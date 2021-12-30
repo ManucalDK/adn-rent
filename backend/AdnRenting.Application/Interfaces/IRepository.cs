@@ -9,7 +9,7 @@ namespace AdnRenting.Application.Interfaces
 {
     public interface IRepository<T> where T : EntityBase
     {
-        Task<T> GetById(int id);
+        Task<T> GetById(string id);
         Task<IEnumerable<T>> List();
         Task<IEnumerable<T>> List(Expression<Func<T, bool>> predicate);
         Task<T> Add(T entity);
